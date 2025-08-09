@@ -42,6 +42,21 @@
             overflow-x: hidden;
             overflow-y: hidden;
         }
+        /* Responsive Iframe Container */
+        .iframe-container {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            padding-top: 125%; /* Aspect ratio for the form height */
+        }
+        .iframe-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
     </style>
 </head>
 <body class="bg-black text-white">
@@ -54,7 +69,7 @@
             <!-- Header Section -->
             <header class="text-center p-6 md:p-12" style="background: linear-gradient(to right, #C83803, #4F2683);">
                 <!-- Optimized font sizes for mobile -->
-                <h1 class="text-3xl sm:text-4xl md:text-5xl font-black uppercase text-shadow text-white">Bears <span class="text-2xl sm:text-2xl md:text-3xl text-gray-300">vs.</span> Vikings</h1>
+                <h1 class="text-4xl sm:text-5xl md:text-6xl font-black uppercase text-shadow text-white">Bears <span class="text-2xl sm:text-3xl md:text-4xl text-gray-300">vs.</span> Vikings</h1>
                 <p class="text-xl sm:text-2xl md:text-3xl font-bold mt-2 text-shadow text-gray-200">Watch Party at Dave & Buster's</p>
             </header>
 
@@ -67,21 +82,12 @@
                     <p class="mt-2 text-lg text-gray-400">(Food and Drinks Provided)</p>
                 </section>
 
-                <!-- Meet the Surgeons Section -->
-                <section class="bg-gray-800 bg-opacity-50 rounded-lg p-6 text-center mb-8">
-                    <h3 class="text-xl font-bold">Meet the B&B Surgeons</h3>
-                    <p class="text-gray-400 mt-1">From Southern California Vascular</p>
-                    <a href="http://southerncaliforniavascular.com" target="_blank" rel="noopener noreferrer" class="inline-block mt-4 text-white font-bold py-3 px-6 rounded-lg hover:opacity-90 transition duration-300 btn-gradient-purple">
-                        Visit Website
-                    </a>
-                </section>
-
                 <!-- Event Details Grid -->
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10">
                     
                     <!-- Location Section -->
                     <div class="bg-gray-800 bg-opacity-50 rounded-lg p-6 flex flex-col">
-                        <h3 class="text-xl font-bold border-b border-gray-700 pb-2 mb-4 text-[#FFC62F]">Location</h3>
+                        <h3 class="text-2xl font-bold border-b border-gray-700 pb-2 mb-4 text-[#FFC62F]">Location</h3>
                         <div class="flex-grow">
                             <p class="font-semibold text-lg">Dave & Buster's - Event Room</p>
                             <p class="text-gray-400">7515 Carson Blvd.</p>
@@ -91,53 +97,33 @@
                             Get Directions
                         </a>
                     </div>
-
-                    <!-- Raffle & Spots Section -->
-                    <div class="bg-gray-800 bg-opacity-50 rounded-lg p-6">
-                        <h3 class="text-xl font-bold border-b border-gray-700 pb-2 mb-4 text-[#FFC62F]">Amazing Raffle Prizes!</h3>
-                        <p class="text-lg">Don't miss out on your chance to win.</p>
-                        <div class="mt-4 bg-gradient-to-r from-[#C83803] to-[#FFC62F] text-gray-900 font-black text-center rounded-lg p-4">
-                            <span class="text-2xl">120 SPOTS AVAILABLE</span>
-                            <p class="text-sm font-semibold">RSVP to secure yours!</p>
+                    
+                    <!-- Meet the Surgeons Section -->
+                    <div class="bg-gray-800 bg-opacity-50 rounded-lg p-6 text-center">
+                        <h3 class="text-2xl font-bold text-[#FFC62F]">Meet the Hosts</h3>
+                        <p class="text-gray-300 mt-4">Hosted by Champion Health & B&B Medical Group</p>
+                        <p class="text-gray-400 mt-2">Meet the B&B Surgeons from Southern California Vascular</p>
+                        <div class="flex flex-col sm:flex-row justify-center gap-4 mt-6">
+                             <a href="http://championhmo.com" target="_blank" rel="noopener noreferrer" class="inline-block text-white font-bold py-2 px-5 rounded-lg hover:opacity-90 transition duration-300 btn-gradient-orange">
+                                Champion Health
+                            </a>
+                             <a href="http://southerncaliforniavascular.com" target="_blank" rel="noopener noreferrer" class="inline-block text-white font-bold py-2 px-5 rounded-lg hover:opacity-90 transition duration-300 btn-gradient-purple">
+                                B&B Medical
+                            </a>
                         </div>
                     </div>
                 </div>
 
-                <!-- RSVP/Contact Section -->
-                <section class="mt-10 pt-8 border-t border-gray-800">
-                    <h2 class="text-3xl font-bold text-center mb-6 text-[#FFC62F]">RSVP & Contact Info</h2>
-                    <!-- Grid now stacks on mobile and becomes 2 columns on medium screens and up -->
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-center">
-                        
-                        <!-- Champion Health Contacts -->
-                        <div class="bg-gray-800 bg-opacity-50 rounded-lg p-4 flex flex-col justify-between">
-                            <div>
-                                <p class="font-bold text-lg text-white">Champion Health</p>
-                                <p class="mt-2">Gus: <a href="tel:1-562-743-1551" class="text-gray-300 hover:underline">562-743-1551</a></p>
-                                <p>Taylor: <a href="tel:1-562-743-1682" class="text-gray-300 hover:underline">562-743-1682</a></p>
-                            </div>
-                            <a href="http://championhmo.com" target="_blank" rel="noopener noreferrer" class="inline-block mt-4 text-white font-bold py-2 px-5 rounded-lg hover:opacity-90 transition duration-300 btn-gradient-orange">
-                                Visit Website
-                            </a>
-                        </div>
-                        
-                        <!-- B&B Medical Group Contact -->
-                        <div class="bg-gray-800 bg-opacity-50 rounded-lg p-4 flex flex-col justify-between">
-                            <div>
-                                <p class="font-bold text-lg text-white">B&B Medical Group</p>
-                                <p class="text-sm text-gray-500">(ASC in Bellflower)</p>
-                                <p class="mt-2">Veronica: <a href="tel:1-323-907-7097" class="text-gray-300 hover:underline">323-907-7097</a></p>
-                                <p class="mt-1 text-gray-400">Call Veronica to RSVP.</p>
-                            </div>
-                             <a href="http://southerncaliforniavascular.com" target="_blank" rel="noopener noreferrer" class="inline-block mt-4 text-white font-bold py-2 px-5 rounded-lg hover:opacity-90 transition duration-300 btn-gradient-purple">
-                                Visit Website
-                            </a>
-                        </div>
-
+                <!-- RSVP Section -->
+                <section class="mt-10 pt-10 border-t border-gray-800">
+                    <h2 class="text-3xl font-bold text-center mb-4 text-[#FFC62F]">RSVP to Secure Your Spot</h2>
+                    <p class="text-center text-gray-300 max-w-2xl mx-auto mb-8">
+                        Get ready for an epic showdown! Join us for an exclusive watch party. Enjoy complimentary food, drinks, and a chance to win amazing raffle prizes. Spots are limited to 120 guests, so RSVP now!
+                    </p>
+                    <div class="iframe-container rounded-lg overflow-hidden">
+                        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdy4gPd9V6srTzECRNKWfrA7xM4SUQ76o2IEsXbB7OebWZreQ/viewform?embedded=true">Loading…</iframe>
                     </div>
                 </section>
-                
-
 
             </main>
         </div>
@@ -150,7 +136,7 @@
 
     </div>
 
-    <!-- Modal -->
+    <!-- Modal for original flyer (kept in case you want to use it later) -->
     <div id="flyer-modal" class="modal pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center opacity-0">
         <div id="modal-overlay" class="absolute w-full h-full bg-black opacity-90"></div>
         
@@ -159,38 +145,39 @@
                 <!-- Close Button -->
                 <button id="modal-close" class="absolute top-0 right-0 mt-4 mr-4 text-white text-3xl leading-none hover:text-gray-300">&times;</button>
                 <!-- Modal Body -->
-                <img src="images/flyer.png" alt="Event Flyer" class="w-full rounded-lg" onerror="this.onerror=null;this.src='https://placehold.co/600x800/262626/FFFFFF?text=Image+Not+Found';">
+                <img src="images/flyer.jpg" alt="Event Flyer" class="w-full rounded-lg" onerror="this.onerror=null;this.src='https://placehold.co/600x800/262626/FFFFFF?text=Image+Not+Found';">
             </div>
         </div>
     </div>
 
     <script>
-        // Modal functionality
+        // Modal functionality (can be removed if you are sure you won't use the flyer button)
         const flyerButton = document.getElementById('flyer-button');
         const modal = document.getElementById('flyer-modal');
         const modalClose = document.getElementById('modal-close');
         const modalOverlay = document.getElementById('modal-overlay');
 
-        function openModal() {
-            modal.classList.remove('pointer-events-none', 'opacity-0');
-            document.body.classList.add('modal-active');
-        }
-
-        function closeModal() {
-            modal.classList.add('pointer-events-none', 'opacity-0');
-            document.body.classList.remove('modal-active');
-        }
-
-        flyerButton.addEventListener('click', openModal);
-        modalClose.addEventListener('click', closeModal);
-        modalOverlay.addEventListener('click', closeModal);
-
-        // Close modal with Escape key
-        document.addEventListener('keydown', function (e) {
-            if (e.key === 'Escape') {
-                closeModal();
+        if (flyerButton) {
+            function openModal() {
+                modal.classList.remove('pointer-events-none', 'opacity-0');
+                document.body.classList.add('modal-active');
             }
-        });
+
+            function closeModal() {
+                modal.classList.add('pointer-events-none', 'opacity-0');
+                document.body.classList.remove('modal-active');
+            }
+
+            flyerButton.addEventListener('click', openModal);
+            if(modalClose) modalClose.addEventListener('click', closeModal);
+            if(modalOverlay) modalOverlay.addEventListener('click', closeModal);
+
+            document.addEventListener('keydown', function (e) {
+                if (e.key === 'Escape') {
+                    closeModal();
+                }
+            });
+        }
     </script>
 
 </body>
