@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bears vs. Vikings Watch Party | Dave & Buster's Long Beach</title>
 
+    <!-- Open Graph / Social Media Preview Meta Tags -->
     <meta property="og:title" content="Bears vs. Vikings Watch Party">
     <meta property="og:description" content="Join us at Dave & Buster's in Long Beach for a live watch party! Food, drinks, and raffle prizes provided.">
+    <!-- IMPORTANT: Replace this URL with the full, direct link to your preview image on GitHub Pages -->
     <meta property="og:image" content="https://your-github-username.github.io/your-repo-name/images/social-preview.png">
+    <!-- IMPORTANT: Replace this URL with your live website's URL -->
     <meta property="og:url" content="https://your-github-username.github.io/your-repo-name/">
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary_large_image">
@@ -17,6 +20,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <!-- AddEvent.com script -->
+    <script type="text/javascript" src="https://cdn.addevent.com/libs/atc/1.6.1/atc.min.js" async defer></script>
     <style>
         body {
             font-family: 'Inter', sans-serif;
@@ -39,28 +44,59 @@
             overflow-x: hidden;
             overflow-y: hidden;
         }
+        /* HubSpot Form Custom Styles */
+        .hs-form-frame h1 {
+            color: #FFC62F !important;
+        }
+        .hs-form-frame label,
+        .hs-form-frame .hs-form-field,
+        .hs-form-frame .hs-form-required,
+        .hs-form-frame .hs-error-msgs label,
+        .hs-form-frame .legal-consent-container .hs-form-booleancheckbox-display {
+            color: #FFFFFF !important;
+        }
     </style>
 </head>
 <body class="bg-black text-white">
 
+    <!-- Main Container -->
     <div class="container mx-auto p-4 sm:p-6 md:p-8 max-w-4xl">
         
         <div class="bg-gray-900 bg-opacity-75 rounded-2xl shadow-2xl overflow-hidden border border-gray-800">
             
+            <!-- Header Section -->
             <header class="text-center p-6 md:p-12" style="background: linear-gradient(to right, #C83803, #4F2683);">
+                <!-- Optimized font sizes for mobile -->
                 <h1 class="text-4xl sm:text-5xl md:text-6xl font-black uppercase text-shadow text-white">Bears <span class="text-2xl sm:text-3xl md:text-4xl text-gray-300">vs.</span> Vikings</h1>
                 <p class="text-xl sm:text-2xl md:text-3xl font-bold mt-2 text-shadow text-gray-200">Watch Party at Dave & Buster's</p>
             </header>
 
+            <!-- Main Content -->
             <main class="p-6 md:p-10">
                 
+                <!-- Date and Time Section -->
                 <section class="text-center mb-8">
                     <h2 class="text-3xl md:text-4xl font-bold text-[#FFC62F]">Sept. 8 | 5:15 PM</h2>
                     <p class="mt-2 text-lg text-gray-400">(Food and Drinks Provided)</p>
+                    
+                    <!-- Add to Calendar Button -->
+                    <div class="mt-6">
+                        <div title="Add to Calendar" class="addeventatc">
+                            Add to Calendar
+                            <span class="start">09/08/2025 05:15 PM</span>
+                            <span class="end">09/08/2025 08:30 PM</span>
+                            <span class="timezone">America/Los_Angeles</span>
+                            <span class="title">Bears vs. Vikings Watch Party</span>
+                            <span class="description">Join us for an exclusive watch party at Dave & Buster's! Enjoy complimentary food, drinks, and a chance to win amazing raffle prizes. Hosted by Champion Health & B&B Medical Group.</span>
+                            <span class="location">Dave & Buster's, 7515 Carson Blvd., Long Beach, CA 90808</span>
+                        </div>
+                    </div>
                 </section>
 
+                <!-- Event Details Grid -->
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10">
                     
+                    <!-- Location Section -->
                     <div class="bg-gray-800 bg-opacity-50 rounded-lg p-6 flex flex-col">
                         <h3 class="text-2xl font-bold border-b border-gray-700 pb-2 mb-4 text-[#FFC62F]">Location</h3>
                         <div class="flex-grow">
@@ -73,6 +109,7 @@
                         </a>
                     </div>
                     
+                    <!-- Meet the Surgeons Section -->
                     <div class="bg-gray-800 bg-opacity-50 rounded-lg p-6 text-center">
                         <h3 class="text-2xl font-bold text-[#FFC62F]">Meet the Hosts</h3>
                         <p class="text-gray-300 mt-4">Hosted by Champion Health & B&B Medical Group</p>
@@ -88,12 +125,14 @@
                     </div>
                 </div>
 
+                <!-- RSVP Section -->
                 <section class="mt-10 pt-10 border-t border-gray-800">
                     <h2 class="text-3xl font-bold text-center mb-4 text-[#FFC62F]">RSVP to Secure Your Spot</h2>
                     <p class="text-center text-gray-300 max-w-2xl mx-auto mb-8">
                         Get ready for an epic showdown! Join us for an exclusive watch party. Enjoy complimentary food, drinks, and a chance to win amazing raffle prizes. Spots are limited to 120 guests, so RSVP now!
                     </p>
                     
+                    <!-- HubSpot Form Embed -->
                     <script src="https://js-na2.hsforms.net/forms/embed/243705045.js" defer></script>
                     <div class="hs-form-frame" data-region="na2" data-form-id="b8173d6a-b0ee-4ee8-82e4-e8fc5b8283ff" data-portal-id="243705045"></div>
 
@@ -102,6 +141,7 @@
             </main>
         </div>
         
+        <!-- Footer -->
         <footer class="text-center text-gray-600 text-sm mt-8 pb-4">
             <p>This is a promotional website based on an event flyer.</p>
             <p>© 2025 Event Sponsors. All rights reserved.</p>
@@ -109,12 +149,15 @@
 
     </div>
 
+    <!-- Modal for original flyer (kept in case you want to use it later) -->
     <div id="flyer-modal" class="modal pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center opacity-0">
         <div id="modal-overlay" class="absolute w-full h-full bg-black opacity-90"></div>
         
         <div class="modal-container z-50 w-11/12 md:max-w-md mx-auto rounded-lg shadow-lg overflow-y-auto">
             <div class="modal-content py-4 text-left px-6 relative">
+                <!-- Close Button -->
                 <button id="modal-close" class="absolute top-0 right-0 mt-4 mr-4 text-white text-3xl leading-none hover:text-gray-300">×</button>
+                <!-- Modal Body -->
                 <img src="images/flyer.jpg" alt="Event Flyer" class="w-full rounded-lg" onerror="this.onerror=null;this.src='https://placehold.co/600x800/262626/FFFFFF?text=Image+Not+Found';">
             </div>
         </div>
